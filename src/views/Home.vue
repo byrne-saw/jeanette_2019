@@ -11,7 +11,7 @@
 export default {
   data: function() {
     return {
-      message: "Jeanette 2019"
+      message: "Home Page"
     };
   },
   created: function() {},
