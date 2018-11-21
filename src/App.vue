@@ -1,7 +1,12 @@
 <template>
   <div id="app">
-    <div id="nav">
-
+    <div class="header">
+      <div>
+        <!-- As a link -->
+        <b-navbar variant="faded" type="light">
+          <b-navbar-brand href="#">Jeanette B. Taylor</b-navbar-brand>
+        </b-navbar>
+      </div>
     </div>
     <router-view/>
   </div>
@@ -12,7 +17,7 @@
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /*text-align: center;*/
   color: #2c3e50;
 }
 #nav {
