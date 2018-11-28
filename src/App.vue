@@ -4,7 +4,7 @@
       <div>
         <!-- As a link -->
         <b-navbar variant="faded" type="light">
-          <b-navbar-brand href="#">Jeanette B. Taylor</b-navbar-brand>
+          <b-navbar-brand href="#">Jeanette B. Taylor (SCOTT)</b-navbar-brand>
         </b-navbar>
       </div>
     </div>
