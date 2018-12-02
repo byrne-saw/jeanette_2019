@@ -12,6 +12,10 @@
         <button>FIND POLLING STATION</button>
       </div> 
     </div>
+
+    <div v-if="spanish">
+      <h1>FUCK YA</h1>
+    </div>
     
 
 
