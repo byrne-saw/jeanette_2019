@@ -2,7 +2,7 @@
   <div class="vote">
   
     <div id="blue-strip">
-      <h1 id="election-day">Election day is February 19, 2019</h1>
+      <h1 id="election-day">Election day is February 19, 2018</h1>
     </div>
 
     <div id="red-strip">
@@ -11,10 +11,6 @@
         <p>Find out where to vote in the 20th and make a plan to cast your ballot for Jeanette Taylor!</p>
         <button>FIND POLLING STATION</button>
       </div> 
-    </div>
-
-    <div v-if="spanish">
-      <h1>FUCK YA</h1>
     </div>
     
 
