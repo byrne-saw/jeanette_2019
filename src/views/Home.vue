@@ -1,19 +1,31 @@
 <template>
   <div class="home">
 
-  <div class="hero-container">
-    <div class="hero-image">
-      <div class="hero-text">
-     <!--    <h1>Jeanette Taylor 2019</h1> -->
-      </div>
+  <div class="home-grid">
+    <div class="image">
+      <img src="../assets/hero-image2.png"/>
     </div>
-    <div class="hero-action">
-      <h3 class="hero-info">20TH WARD ELECTION FEBRUARY 19, 2019</h3>
-  
-          <b-button class="donate-btn" variant= 'outline-danger' href="">DONATE</b-button>
-          <b-button class="volunteer-btn" variant= 'outline-danger' href="">VOLUNTEER</b-button>
 
+    <div class="ctatext">
+      <p>20th Ward Alderman election: February 19th, 2019</p>
+      </div>
+
+    <div class="calltoaction">
+        <b-button class="home-btn" variant= 'danger' href="" target="_blank" >DONATE</b-button>
+        <b-button class="home-btn" variant= 'danger' href="" target="_blank" >VOTE</b-button>
     </div>
+
+    <div class="meet-image"></div>
+    <div class="image">
+      <img src="../assets/hero-image2.png"/>
+    </div>
+
+    <div class="meet-candidate">
+      <h1>Meet Jeanette Taylor</h1>
+      <p>I'm running for 20th ward alderman because I believe in yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda </p>
+    </div>
+
+
   </div>
 
   </div>
@@ -21,55 +33,76 @@
 
 <style>
 
-/* The hero image */
-.hero-image {
-    background-image: url("../assets/hero-image.png");
-    height: 70%;
-    min-height: 65vh;
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin: 0 auto;
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(30, 1fr);
 }
+   
+.image {
+   grid-column: 1 / -1;
+   grid-row: 1 / 7;
+   overflow: hidden;
+   object-fit: contain;
+ } 
+ 
+ .image img {
+   max-width: 100%;
+ }
 
-.hero-info {
+ .calltoaction {
+  grid-column: 2 / 7;
+  grid-row: 6 /8;
+  display: flex;
+  background-color: rgba(4, 70, 150, .8);
+  align-items: center;
+  overflow: hidden;
+  z-index: 0;
+ }
+
+ .home-btn {
+  flex-grow: 1;
+  align-self: stretch;
+  margin-top: 7%;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 3%;
+ }
+
+ .calltoaction button {
+  font-weight: bold;
+  font-size: 3vw;
+  font-family: verdana;
+ }
+
+ .ctatext {
+  grid-column: 3 / 6;
+  grid-row: 6 / 7;
+  z-index: 1;
+ }
+
+.ctatext p {
+ color: white;
+ font-size: 1.678vw;
+ font-weight: bold;
+ }
+
+ .meet-image {
+  background-color: mistyrose;
+  grid-column: 1 / 6;
+  grid-row: 9 / 16;
+ }
+
+ .meet-candidate {
+  grid-column: 4 / -1;
+  grid-row: 10 / 14;
+  background-color: rgb(4, 70, 150);
+ }
+
+ .meet-candidate h1, p {
   color: white;
-  font-style: italic;
-  font-weight: bolder;
-  font-family: bookman;
-  font-size: 2vw;
-  position: absolute;
-  top: 50%;
-  left: 28%;
-  transform: translate(-50%, -50%);
-}
-
-.donate-btn {
-  position: relative;
-  top: 50%;
-  left: 68%;
-  width: 15%;
-  transform: translate(-50%, -50%);
-}
-
-.volunteer-btn {
-  position: relative;
-  top: 50%;
-  left: 72%;
-  width: 15%;
-  transform: translate(-50%, -50%);
-}
-
-.hero-action {
-  width: 75%; height: 120px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(4, 70, 150, .9);
-}
+  margin: 3%;
+ }
 
 </style>
 
