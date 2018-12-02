@@ -7,7 +7,7 @@
     </div>
 
     <div class="ctatext">
-      <p>20th Ward Alderman election: February 19th, 2019</p>
+      <p>20TH WARD ALDERMAN ELECTION 2/19/19</p>
       </div>
 
     <div class="calltoaction">
@@ -21,8 +21,8 @@
     </div>
 
     <div class="meet-candidate">
-      <h1>Meet Jeanette Taylor</h1>
-      <p>I'm running for 20th ward alderman because I believe in yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda yadda </p>
+      <h1>Meet Jeanette</h1>
+      <p>Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello </p>
     </div>
 
 
@@ -83,7 +83,8 @@
 
 .ctatext p {
  color: white;
- font-size: 1.678vw;
+ font-size: 1.735vw;
+ font-family: verdana;
  font-weight: bold;
  }
 
@@ -91,17 +92,20 @@
   background-color: mistyrose;
   grid-column: 1 / 6;
   grid-row: 9 / 16;
+  display: flex;
  }
 
  .meet-candidate {
   grid-column: 4 / -1;
   grid-row: 10 / 14;
   background-color: rgb(4, 70, 150);
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
  }
 
  .meet-candidate h1, p {
   color: white;
-  margin: 3%;
  }
 
 </style>
