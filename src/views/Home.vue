@@ -1,7 +1,6 @@
 <template>
   <div class="home">
 
-  <div class="">
   <div class="hero">
   <b-img :src="require('../assets/hero-image2.png')" fluid-grow/>
  </div>
@@ -13,8 +12,6 @@
   <b-btn class="btn1" variant="primary" href="#">Donate</b-btn>
   <b-btn class="btn2" variant="danger" href="#">Vote</b-btn>
 </b-jumbotron>
-</div>
-
 
 
 <!-- src="../assets/hero-image.png" -->
@@ -24,6 +21,8 @@
 </template>
 
 <style scoped>
+
+
 
 .hero {
   margin-right: -12px;
@@ -50,6 +49,7 @@
   flex: 1 1 200px;
   font-size: 7vh;
 }
+
 
 
 </style>
