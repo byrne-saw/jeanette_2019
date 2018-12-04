@@ -1,17 +1,19 @@
 <template>
   <div class="home">
 
+  <div class="">
   <div class="hero">
   <b-img :src="require('../assets/hero-image2.png')" fluid-grow/>
  </div>
 
   <b-jumbotron>
     <template slot="header">
-    <h2>20th Ward Alderman Election February 19, 2019</h2>
+    <h2>20th Ward Alderman Election 2/2/2019</h2>
     </template>
-  <b-btn class="btn" variant="primary" href="#">Donate</b-btn>
-  <b-btn class="btn" variant="danger" href="#">Vote</b-btn>
+  <b-btn class="btn1" variant="primary" href="#">Donate</b-btn>
+  <b-btn class="btn2" variant="danger" href="#">Vote</b-btn>
 </b-jumbotron>
+</div>
 
 
 
@@ -24,9 +26,7 @@
 <style scoped>
 
 .hero {
-  margin-right: -15px;
-  display: flex;
-  align-items: center;
+  margin-right: -12px;
 }
 
 .jumbotron {
@@ -38,14 +38,16 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100% !important;
+  grid-row: 4 / span 1;
 }
 
 .jumbotron h2 {
-  padding-right: 10%;
+  padding-right: 3.2%;
+  align-self: center;
 }
 
-.btn {
-  flex: 2 1 200px;
+.btn1, .btn2 {
+  flex: 1 1 200px;
   font-size: 7vh;
 }
 
