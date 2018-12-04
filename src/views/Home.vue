@@ -1,22 +1,31 @@
 <template>
   <div class="home">
+  
+  <div class="bundle">
+    <div class="hero">
+      <b-img :src="require('../assets/hero-image2.png')" fluid-grow/>
+    </div>
+      
+    <div class="row rowoverlay">
+      <b-container>  
+        <b-jumbotron>
+          <template slot="header">
+            <h2>20th Ward Alderman Election 2/2/2019</h2>
+          </template>
+          <template slot="lead">
 
-  <div class="hero">
-  <b-img :src="require('../assets/hero-image2.png')" fluid-grow/>
- </div>
-
-  <b-jumbotron>
-    <template slot="header">
-    <h2>20th Ward Alderman Election 2/2/2019</h2>
-    </template>
-  <b-btn class="btn1" variant="primary" href="#">Donate</b-btn>
-  <b-btn class="btn2" variant="danger" href="#">Vote</b-btn>
-</b-jumbotron>
+            <b-btn class="btn1" variant="primary" href="#">Donate</b-btn>
+            <b-btn class="btn2" variant="danger" href="#">Vote</b-btn>
+          </template>  
+        </b-jumbotron>
+      </b-container>
+    </div>
+  </div>
 
 
-<!-- src="../assets/hero-image.png" -->
+  <!-- src="../assets/hero-image.png" -->
 
-</div>
+  </div>
 
 </template>
 
@@ -50,6 +59,19 @@
   font-size: 7vh;
 }
 
+.rowoverlay{
+  position: absolute;
+  top: 85%;
+  left:0;
+  z-index:1;
+  bottom:0;
+  right:0;
+  height:100%;
+}
+
+.bundle {
+  position: relative;
+}
 
 
 </style>
