@@ -12,10 +12,15 @@
           <template slot="header">
             <h2>20th Ward Alderman Election 2/26/2019</h2>
           </template>
-            <div>
+          <div class="btns">
+            <div class="flex">
             <b-btn class="btn2" variant="danger" href="#/vote">Vote</b-btn>
+            </div><br/>
+            <div class="flex1">
             <b-btn class="btn1" variant="primary" href="https://secure.actblue.com/donate/taylorfor20th">Donate</b-btn>
             </div>
+          </div>
+        </b-jumbotron>
         </b-jumbotron>
       </b-container>
     </div>
@@ -62,6 +67,11 @@
 
 <style scoped>
 
+.flex, .flex1 {
+  display: flex;
+  width: 200px;
+}
+
 
 .hero, .meet-image {
   margin-right: -12px;
@@ -74,7 +84,7 @@
   color: white;
   border-radius: 0 !important;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   width: 100% !important;
@@ -83,10 +93,10 @@
 }
 
 .jumbotron h2 {
-  padding-right: 3.2%;
-  align-self: flex-start;
+  
   font-family: palatino;
   font-weight: bold;
+  align-self: flex-start;
 }
 
 .btn1, .btn2 {
