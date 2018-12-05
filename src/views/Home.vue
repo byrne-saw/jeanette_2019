@@ -12,8 +12,10 @@
           <template slot="header">
             <h2>20th Ward Alderman Election 2/26/2019</h2>
           </template>
+            <div>
             <b-btn class="btn2" variant="danger" href="#/vote">Vote</b-btn>
             <b-btn class="btn1" variant="primary" href="https://secure.actblue.com/donate/taylorfor20th">Donate</b-btn>
+            </div>
         </b-jumbotron>
       </b-container>
     </div>
@@ -22,6 +24,7 @@
   <div class="space">
   </div>
 
+  <b-container fluid>
   <div class="bundle">
     <div class="meet-image">
       <b-img :src="require('../assets/meet-jeanette3.png')" fluid/>
@@ -47,8 +50,8 @@
         </b-jumbotron>
       </b-container>
     </div>
-
   </div>
+</b-container>
 
 
   <!-- src="../assets/hero-image.png" -->
@@ -62,13 +65,8 @@
 
 .hero, .meet-image {
   margin-right: -12px;
-  display: inline-table;
+  /*display: inline-table;*/
 }
-
-/*.meet-image {
-  width: 100vw;
-}*/
-
 
 
 .jumbotron {
@@ -92,7 +90,7 @@
 }
 
 .btn1, .btn2 {
-  flex: 5 1 200px;
+  flex: 1 1 200px;
   font-size: 5vh;
 }
 
