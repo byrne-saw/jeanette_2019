@@ -80,7 +80,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100% !important;
-  grid-row: 4 / span 1;
+ /* grid-row: 4 / span 1;*/
   align-content: center;
 }
 
@@ -93,7 +93,11 @@
 
 .btn1, .btn2 {
   flex: 5 1 200px;
-  font-size: 7vh;
+  font-size: 5vh;
+}
+
+.btn3 {
+  align-self: flex-end;
 }
 
 .rowoverlay {
@@ -103,7 +107,7 @@
   z-index:1;
   bottom:0;
   right:0;
-  height:100%;
+ /* height:100%;*/
 }
 
 .rowoverlay1 {
@@ -113,17 +117,18 @@
   z-index:1;
   bottom:0;
   right:0;
-  height: 100%;
+  /*height: 100%;*/
 }
 
 .rowoverlay2 {
+  display: flex;
   position: absolute;
   top: 80%;
   left: 0%;
   z-index:1;
   bottom:0;
   right:30%;
-  height: 100%;
+ /* height: 100%;*/
 }
 
 .bundle {
@@ -132,6 +137,15 @@
 
 .space {
   height: 10vh;
+}
+
+@media (max-width: 700px) {
+  .btn1, .btn2 {
+  font-size: 2vh;
+  }
+  .space {
+  height: 15vh;
+  }
 }
 
 
