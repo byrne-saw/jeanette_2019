@@ -62,7 +62,7 @@
 
 .hero, .meet-image {
   margin-right: -12px;
-  display: flex;
+  display: inline-table;
 }
 
 /*.meet-image {
