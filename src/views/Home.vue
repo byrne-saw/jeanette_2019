@@ -10,16 +10,44 @@
       <b-container>  
         <b-jumbotron>
           <template slot="header">
-            <h2>20th Ward Alderman Election 2/2/2019</h2>
+            <h2>20th Ward Alderman Election 2/26/2019</h2>
           </template>
-          <template slot="lead">
-
-            <b-btn class="btn1" variant="primary" href="#">Donate</b-btn>
-            <b-btn class="btn2" variant="danger" href="#">Vote</b-btn>
-          </template>  
+            <b-btn class="btn2" variant="danger" href="#/vote">Vote</b-btn>
+            <b-btn class="btn1" variant="primary" href="https://secure.actblue.com/donate/taylorfor20th">Donate</b-btn>
         </b-jumbotron>
       </b-container>
     </div>
+  </div>
+
+  <div class="space">
+  </div>
+
+  <div class="bundle">
+    <div class="meet-image">
+      <b-img :src="require('../assets/meet-jeanette3.png')" fluid/>
+    </div>
+      
+    <div class="row rowoverlay1">
+      <b-container>  
+        <b-jumbotron>
+          <template slot="header">
+            <h2>Meet Jeanette</h2>
+          </template>
+        </b-jumbotron>
+      </b-container>
+    </div>
+
+    <div class="row rowoverlay2">
+      <b-container>  
+        <b-jumbotron>
+          <template slot="lead">
+            <p>Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff</p>
+            <b-btn class="btn3" variant="primary" href="#/vote">About Jeanette</b-btn>
+          </template>
+        </b-jumbotron>
+      </b-container>
+    </div>
+
   </div>
 
 
@@ -32,13 +60,19 @@
 <style scoped>
 
 
-
-.hero {
+.hero, .meet-image {
   margin-right: -12px;
+  display: flex;
 }
 
+/*.meet-image {
+  width: 100vw;
+}*/
+
+
+
 .jumbotron {
-  background-color: #044696;
+  background-color: rgba(4,70,150, .8);
   color: white;
   border-radius: 0 !important;
   display: flex;
@@ -47,21 +81,24 @@
   flex-wrap: wrap;
   width: 100% !important;
   grid-row: 4 / span 1;
+  align-content: center;
 }
 
 .jumbotron h2 {
   padding-right: 3.2%;
-  align-self: center;
+  align-self: flex-start;
+  font-family: palatino;
+  font-weight: bold;
 }
 
 .btn1, .btn2 {
-  flex: 1 1 200px;
+  flex: 5 1 200px;
   font-size: 7vh;
 }
 
-.rowoverlay{
+.rowoverlay {
   position: absolute;
-  top: 85%;
+  top: 80%;
   left:0;
   z-index:1;
   bottom:0;
@@ -69,8 +106,32 @@
   height:100%;
 }
 
+.rowoverlay1 {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  z-index:1;
+  bottom:0;
+  right:0;
+  height: 100%;
+}
+
+.rowoverlay2 {
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  z-index:1;
+  bottom:0;
+  right:30%;
+  height: 100%;
+}
+
 .bundle {
   position: relative;
+}
+
+.space {
+  height: 10vh;
 }
 
 
