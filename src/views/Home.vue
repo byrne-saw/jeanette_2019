@@ -1,112 +1,151 @@
 <template>
   <div class="home">
+  
+  <div class="bundle">
+    <div class="hero">
+      <b-img :src="require('../assets/hero-image2.png')" fluid-grow/>
+    </div>
+      
+    <div class="row rowoverlay">
+      <b-container>  
+        <b-jumbotron>
+          <template slot="header">
+            <h2>20th Ward Alderman Election 2/26/2019</h2>
+          </template>
+            <div>
+            <b-btn class="btn2" variant="danger" href="#/vote">Vote</b-btn>
+            <b-btn class="btn1" variant="primary" href="https://secure.actblue.com/donate/taylorfor20th">Donate</b-btn>
+            </div>
+        </b-jumbotron>
+      </b-container>
+    </div>
+  </div>
 
-  <div class="home-grid">
-    <div class="image">
-      <img src="../assets/hero-image2.png"/>
+  <div class="space">
+  </div>
+
+  <b-container fluid>
+  <div class="bundle">
+    <div class="meet-image">
+      <b-img :src="require('../assets/meet-jeanette3.png')" fluid/>
+    </div>
+      
+    <div class="row rowoverlay1">
+      <b-container>  
+        <b-jumbotron>
+          <template slot="header">
+            <h2>Meet Jeanette</h2>
+          </template>
+        </b-jumbotron>
+      </b-container>
     </div>
 
-    <div class="ctatext">
-      <p>20TH WARD ALDERMAN ELECTION 2/19/19</p>
-      </div>
-
-    <div class="calltoaction">
-        <b-button class="home-btn" variant= 'danger' href="" target="_blank" >DONATE</b-button>
-        <b-button class="home-btn" variant= 'danger' href="" target="_blank" >VOTE</b-button>
+    <div class="row rowoverlay2">
+      <b-container>  
+        <b-jumbotron>
+          <template slot="lead">
+            <p>Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff</p>
+            <b-btn class="btn3" variant="primary" href="#/vote">About Jeanette</b-btn>
+          </template>
+        </b-jumbotron>
+      </b-container>
     </div>
+  </div>
+</b-container>
 
-    <div class="meet-image"></div>
-    <div class="image">
-      <img src="../assets/hero-image2.png"/>
-    </div>
 
-    <div class="meet-candidate">
-      <h1>Meet Jeanette</h1>
-      <p>Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello </p>
-    </div>
-
+  <!-- src="../assets/hero-image.png" -->
 
   </div>
 
-  </div>
 </template>
 
-<style>
+<style scoped>
 
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(30, 1fr);
+
+.hero, .meet-image {
+  margin-right: -12px;
+  /*display: inline-table;*/
 }
-   
-.image {
-   grid-column: 1 / -1;
-   grid-row: 1 / 7;
-   overflow: hidden;
-   object-fit: contain;
- } 
- 
- .image img {
-   max-width: 100%;
- }
 
- .calltoaction {
-  grid-column: 2 / 7;
-  grid-row: 6 /8;
-  display: flex;
-  background-color: rgba(4, 70, 150, .8);
-  align-items: center;
-  overflow: hidden;
-  z-index: 0;
- }
 
- .home-btn {
-  flex-grow: 1;
-  align-self: stretch;
-  margin-top: 7%;
-  margin-left: 6%;
-  margin-right: 6%;
-  margin-bottom: 3%;
- }
-
- .calltoaction button {
-  font-weight: bold;
-  font-size: 3vw;
-  font-family: verdana;
- }
-
- .ctatext {
-  grid-column: 3 / 6;
-  grid-row: 6 / 7;
-  z-index: 1;
- }
-
-.ctatext p {
- color: white;
- font-size: 1.735vw;
- font-family: verdana;
- font-weight: bold;
- }
-
- .meet-image {
-  background-color: mistyrose;
-  grid-column: 1 / 6;
-  grid-row: 9 / 16;
-  display: flex;
- }
-
- .meet-candidate {
-  grid-column: 4 / -1;
-  grid-row: 10 / 14;
-  background-color: rgb(4, 70, 150);
-  display: flex;
-  align-content: space-around;
-  flex-direction: column;
- }
-
- .meet-candidate h1, p {
+.jumbotron {
+  background-color: rgba(4,70,150, .8);
   color: white;
- }
+  border-radius: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100% !important;
+ /* grid-row: 4 / span 1;*/
+  align-content: center;
+}
+
+.jumbotron h2 {
+  padding-right: 3.2%;
+  align-self: flex-start;
+  font-family: palatino;
+  font-weight: bold;
+}
+
+.btn1, .btn2 {
+  flex: 1 1 200px;
+  font-size: 5vh;
+}
+
+.btn3 {
+  align-self: flex-end;
+}
+
+.rowoverlay {
+  position: absolute;
+  top: 80%;
+  left:0;
+  z-index:1;
+  bottom:0;
+  right:0;
+ /* height:100%;*/
+}
+
+.rowoverlay1 {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  z-index:1;
+  bottom:0;
+  right:0;
+  /*height: 100%;*/
+}
+
+.rowoverlay2 {
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  z-index:1;
+  bottom:0;
+  right:30%;
+ /* height: 100%;*/
+}
+
+.bundle {
+  position: relative;
+}
+
+.space {
+  height: 10vh;
+}
+
+@media (max-width: 700px) {
+  .btn1, .btn2 {
+  font-size: 2vh;
+  }
+  .space {
+  height: 15vh;
+  }
+}
+
 
 </style>
 
