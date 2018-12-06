@@ -51,6 +51,9 @@
   -moz-osx-font-smoothing: grayscale;
   /*text-align: center;*/
   color: #2c3e50;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
 }
 #nav {
   padding: 30px;
