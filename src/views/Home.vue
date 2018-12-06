@@ -47,7 +47,6 @@
       </div>
     </b-container>
    </div>
-   <footer class="footer"></footer>
 </div>
 
 
@@ -116,11 +115,6 @@
 
 .space {
   height: 10vh;
-}
-
-.footer {
-  height: 30vh;
-  background-color: rgb(4,70,150)
 }
 
 @media (max-width: 700px) {
