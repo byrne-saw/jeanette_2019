@@ -2,11 +2,12 @@
   <div class="home">
   
   <div class="bundle">
+
     <div class="hero">
       <b-img :src="require('../assets/hero-image2.png')" fluid-grow/>
     </div>
       
-    <div class="row rowoverlay">
+      <div class="row rowoverlay">
       <b-container>  
         <b-jumbotron>
           <template slot="header">
@@ -29,39 +30,26 @@
   <div class="space">
   </div>
 
+<div class="bundle">
   <b-container fluid>
-  <div class="bundle">
     <div class="meet-image">
       <b-img :src="require('../assets/meet-jeanette3.png')" fluid/>
     </div>
-      
-    <div class="row rowoverlay1">
-      <b-container>  
-        <b-jumbotron>
-          <template slot="header">
-            <h2>Meet Jeanette</h2>
-          </template>
-        </b-jumbotron>
-      </b-container>
-    </div>
-
-    <div class="row rowoverlay2">
-      <b-container>  
-        <b-jumbotron>
-          <template slot="lead">
-            <p>Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff</p>
-            <b-btn class="btn3" variant="primary" href="#/vote">About Jeanette</b-btn>
-          </template>
-        </b-jumbotron>
-      </b-container>
-    </div>
-  </div>
-</b-container>
+      <div class="row rowoverlay1">
+        <b-container>
+          <b-jumbotron>
+            <template slot="header">
+              <h2>Meet Jeanette</h2>
+            </template>
+            <p>I am Jeanette B. Taylor, and I have been a parent and school advocate for over 20 years. I want to be the alderman of the 20th Ward for a couple of reasons. First and foremost, I am tired of living in communities where I feel voiceless. I am expected to pay my fair share of taxes. However. I am never asked what I need in my community or what services could be provided for my family and me. Second, elected officials forget that they work for us not the other way around. They forget that they make decisions that affect our everyday lives. I want to work with our community so all members of the 20th Ward have a safe space to live and grow. I want to be the change agent God intended me to be, but I will not and cannot succeed without your help and support.</p>
+          </b-jumbotron>
+        </b-container>
+      </div>
+    </b-container>
+   </div>
+</div>
 
 
-  <!-- src="../assets/hero-image.png" -->
-
-  </div>
 
 </template>
 
@@ -75,7 +63,6 @@
 
 .hero, .meet-image {
   margin-right: -12px;
-  /*display: inline-table;*/
 }
 
 
@@ -87,16 +74,13 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 100% !important;
- /* grid-row: 4 / span 1;*/
   align-content: center;
 }
 
 .jumbotron h2 {
-  
-  font-family: palatino;
   font-weight: bold;
-  align-self: flex-start;
+  align-self: flex-end;
+  font-size: 3vw;
 }
 
 .btn1, .btn2 {
@@ -104,18 +88,13 @@
   font-size: 5vh;
 }
 
-.btn3 {
-  align-self: flex-end;
-}
-
 .rowoverlay {
   position: absolute;
   top: 80%;
-  left:0;
+  left: 0;
   z-index:1;
   bottom:0;
   right:0;
- /* height:100%;*/
 }
 
 .rowoverlay1 {
@@ -125,22 +104,13 @@
   z-index:1;
   bottom:0;
   right:0;
-  /*height: 100%;*/
-}
-
-.rowoverlay2 {
-  display: flex;
-  position: absolute;
-  top: 80%;
-  left: 0%;
-  z-index:1;
-  bottom:0;
-  right:30%;
- /* height: 100%;*/
 }
 
 .bundle {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .space {
@@ -154,6 +124,21 @@
   .space {
   height: 15vh;
   }
+}
+
+@media (max-width: 800px) {
+  .jumbotron p {
+  font-size: 2vw;
+ }
+ .rowoverlay1 {
+  position: absolute;
+  top: 85%;
+  left: 0;
+  z-index:0;
+  bottom:0;
+  right: 0;
+  margin: -40% auto;
+}
 }
 
 

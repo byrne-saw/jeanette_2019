@@ -41,6 +41,7 @@
       </div>
     </div>
     <router-view/>
+    <footer class="footer"></footer>
   </div>
 </template>
 
@@ -51,6 +52,9 @@
   -moz-osx-font-smoothing: grayscale;
   /*text-align: center;*/
   color: #2c3e50;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
 }
 #nav {
   padding: 30px;
@@ -63,6 +67,11 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.footer {
+  height: 30vh;
+  background-color: rgb(4,70,150)
 }
 
 /*.nav-bar {
