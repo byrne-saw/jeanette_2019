@@ -41,7 +41,24 @@
       </div>
     </div>
     <router-view/>
-    <footer class="footer"></footer>
+
+
+    <footer class="footer">
+       <div class="container foots">
+         <div class="row align-items-center">
+           <div class="col">
+           </div>
+           <div class="col">
+              <img src="./assets/JeanetteLogo_White.png" class="d-inline-block align-top" alt="Jeanette 20th Ward" width="273px" height="150px">
+           </div>
+           <div class="col">
+           </div>
+         </div>
+       </div>
+
+              <!-- <img src="./assets/JeanetteLogo_Blue.png" class="d-inline-block align-top" alt="Jeanette 20th Ward" width="109px" height="60px"> -->
+
+    </footer>
   </div>
 </template>
 
@@ -71,12 +88,22 @@
 
 .footer {
   height: 30vh;
-  background-color: rgb(4,70,150)
+  background-color: rgb(4,70,150);
+  /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+
+}
+
+.foots {
+  padding-top: 80px;
+  margin: auto;
+  width: 100%;
 }
 
 /*.nav-bar {
   position: absolute;
-}*/
+}
 
 /*.nav-image {
   position: relative;
