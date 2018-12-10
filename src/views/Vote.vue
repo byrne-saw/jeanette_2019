@@ -13,9 +13,8 @@
         <p v-if="!spanish">Find out where to vote in the 20th and make a plan to cast your ballot for Jeanette Taylor!</p>
         <p v-if="spanish">¡Averigüe dónde votar el 20 y haga un plan para emitir su voto para Jeanette Taylor!</p>
 
-        <b-button v-if="!spanish">FIND POLLING STATION</b-button>
-        <b-button v-if="spanish">ENCUENTRA ESTACIÓN DE POLLING</b-button>
-
+        <b-button href="https://www.cookcountyclerk.com/service/your-voter-information" target="_blank" v-if="!spanish">FIND POLLING STATION</b-button>
+        <b-button href="https://www.cookcountyclerk.com/service/your-voter-information" target="_blank" v-if="spanish">ENCUENTRA ESTACIÓN DE POLLING</b-button>
       </div> 
     </div>
     

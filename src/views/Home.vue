@@ -21,8 +21,8 @@
             <b-btn class="btn2" variant="danger" href="#/vote" v-if="spanish">Votar</b-btn>
             </div><br/>
             <div class="flex1">
-            <b-btn class="btn1" variant="primary" href="https://secure.actblue.com/donate/taylorfor20th" v-if="!spanish">Donate</b-btn>
-            <b-btn class="btn1" variant="primary" href="https://secure.actblue.com/donate/taylorfor20th" v-if="spanish">Donar</b-btn>
+            <b-btn class="btn1" variant="primary" href="https://secure.actblue.com/donate/taylorfor20th" target="_blank" v-if="!spanish">Donate</b-btn>
+            <b-btn class="btn1" variant="primary" href="https://secure.actblue.com/donate/taylorfor20th" target="_blank" v-if="spanish">Donar</b-btn>
             </div>
           </div>
         </b-jumbotron>
