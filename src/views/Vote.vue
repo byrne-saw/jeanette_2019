@@ -2,7 +2,7 @@
   <div class="vote">
   
     <div id="blue-strip">
-      <h1 id="election-day">Election day is February 19, 2018</h1>
+      <h1 id="election-day">Election day is February 26, 2019</h1>
     </div>
 
     <div id="red-strip">
