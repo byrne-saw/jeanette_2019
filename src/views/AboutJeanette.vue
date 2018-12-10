@@ -1,6 +1,6 @@
 <template>
   <div class="jeanette">
-    <h1>{{ message }}</h1>
+    <h1>About Jeanette</h1>
   </div>
 </template>
 
@@ -11,11 +11,19 @@
 export default {
   data: function() {
     return {
-      message: "About Jeanette"
+      spanish: false,
     };
   },
-  created: function() {},
-  methods: {},
+  created: function() {
+      this.checkSpanish();
+    },
+  methods: {
+    checkSpanish: function() {
+      if (localStorage.spanish) {
+        this.spanish = true;
+      }
+    }
+  },
   computed: {}
 };
 </script>
