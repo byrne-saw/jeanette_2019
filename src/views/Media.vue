@@ -1,6 +1,6 @@
 <template>
   <div class="priorities">
-    <h1>{{ message }}</h1>
+    <h1>Media</h1>
   </div>
 </template>
 
@@ -11,11 +11,19 @@
 export default {
   data: function() {
     return {
-      message: "Media"
+      spanish: false,
     };
   },
-  created: function() {},
-  methods: {},
+  created: function() {
+      this.checkSpanish();
+  },
+  methods: {
+    checkSpanish: function() {
+      if (localStorage.spanish) {
+        this.spanish = true;
+      }
+    }
+  },
   computed: {}
 };
 </script>

@@ -1,15 +1,20 @@
 <template>
   <div class="vote">
   
-    <div id="blue-strip">
-      <h1 id="election-day">Election day is February 26, 2019</h1>
+    <div class="blue-strip">
+      <h1 v-if="!spanish" class="election-day">Election day is February 26, 2019</h1>
+      <h1 v-if="spanish" class="election-day">El día de las elecciones es el 26 de febrero de 2019.</h1>
     </div>
 
-    <div id="red-strip">
-      <h1 id="where-to-vote">Where to vote</h1>
-      <div id="vote-info">
-        <p>Find out where to vote in the 20th and make a plan to cast your ballot for Jeanette Taylor!</p>
-        <button>FIND POLLING STATION</button>
+    <div class="red-strip">
+      <h1 v-if="!spanish" class="where-to-vote">Where to vote</h1>
+      <h1 v-if="spanish" class="where-to-vote">Donde votar</h1>
+      <div class="vote-info">
+        <p v-if="!spanish">Find out where to vote in the 20th and make a plan to cast your ballot for Jeanette Taylor!</p>
+        <p v-if="spanish">¡Averigüe dónde votar el 20 y haga un plan para emitir su voto para Jeanette Taylor!</p>
+
+        <b-button href="https://www.cookcountyclerk.com/service/your-voter-information" target="_blank" v-if="!spanish">FIND POLLING STATION</b-button>
+        <b-button href="https://www.cookcountyclerk.com/service/your-voter-information" target="_blank" v-if="spanish">ENCUENTRA ESTACIÓN DE POLLING</b-button>
       </div> 
     </div>
     
@@ -20,21 +25,21 @@
 
 <style scoped>
 
-#blue-strip{
+.blue-strip{
     width: 100%; height: 180px;
     border-style: solid;
     border-color: #044696;
     background-color: #044696;
 }
 
-#red-strip{
+.red-strip{
     width: 100%; height: 360px;
     border-style: solid;
     border-color: #e90000;
     background-color: #e90000;
 }
 
-#election-day, #where-to-vote {
+.election-day, .where-to-vote {
   text-align: center;
   color: white;
   font-family: bookman;
@@ -43,7 +48,7 @@
   letter-spacing: 0px;
 }
 
-#where-to-vote {
+.where-to-vote {
   vertical-align: middle;
   position: relative;
   top: 30%;
@@ -51,7 +56,7 @@
   transform: translate(-50%, -50%);
 }
 
-#election-day {
+.election-day {
   vertical-align: middle;
   position: relative;
   top: 50%;
@@ -59,7 +64,7 @@
   transform: translate(-50%, -50%);
 }
 
-#vote-info {
+.vote-info {
   text-align: center;
   position: relative;
   top: 35%;
@@ -75,11 +80,19 @@
 export default {
   data: function() {
     return {
-      message: "Now we votin now we votin"
+      spanish: false,
     };
   },
-  created: function() {},
-  methods: {},
+  created: function() {
+      this.checkSpanish();
+    },
+  methods: {
+    checkSpanish: function() {
+      if (localStorage.spanish) {
+        this.spanish = true;
+      }
+    }
+  },
   computed: {}
 };
 </script>

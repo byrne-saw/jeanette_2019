@@ -2,7 +2,7 @@
   <div id="app">
     <div class="header">
       <div class="nav-bar">
-        <b-navbar toggleable="md" variant="faded" type="light">
+        <b-navbar toggleable="xl" variant="faded" type="light">
             <b-navbar-brand class="nav-image" href="/">
               <img src="./assets/JeanetteLogo_Blue.png" class="d-inline-block align-top" alt="Jeanette 20th Ward" width="109px" height="60px">
             </b-navbar-brand>
@@ -96,11 +96,15 @@
     methods: {
       setSpanish: function() {
         localStorage.setItem("spanish", true);
-        window.location.href = "/";
+        // window.location.href = "/";
+        window.location.reload(true);
       },
       removeSpanish: function() {
         localStorage.removeItem("spanish");
-        window.location.href = "/";
+        // window.location.href = "/";
+        window.location.reload(true);
+
+        
       },
       checkSpanish: function() {
         if (localStorage.spanish) {
