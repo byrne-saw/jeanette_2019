@@ -118,15 +118,11 @@ export default {
       this.checkSpanish();
   },
   methods: {
-<<<<<<< HEAD
-    // downclick #e90000
-=======
     checkSpanish: function() {
       if (localStorage.spanish) {
         this.spanish = true;
       }
     }
->>>>>>> d6e7bbc4ceecd9e6f4d758d40e2bfd79feb95ebd
   },
   computed: {}
 };
