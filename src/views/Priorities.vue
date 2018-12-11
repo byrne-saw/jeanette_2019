@@ -2,7 +2,8 @@
   <div class="priorities">
     
     <div class="priority-image">
-      <b-img :src="require('../assets/prioritiestext.png')" fluid-grow/>
+      <b-img :src="require('../assets/priortest1.png')" fluid-grow/>
+      <div class="text">Priorities</div>
     </div>
 
   <div role="tablist">
@@ -86,6 +87,20 @@
 </template>
 
 <style>
+
+.priority-image {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 5vw;
+  font-weight: bold;
+}
 
 a.btn.btn-info.btn-block {
   background-color: #044696;
