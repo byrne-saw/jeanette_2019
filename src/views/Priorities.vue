@@ -3,7 +3,8 @@
     
     <div class="priority-image">
       <b-img :src="require('../assets/priortest2.png')" fluid-grow/>
-      <div class="text">Priorities</div>
+      <div class="text" v-if="!spanish">{{ imageText }}</div>
+      <div class="text" v-if="spanish">{{ imageTextEsp }}</div>
     </div>
 
   <div role="tablist">
@@ -115,6 +116,8 @@ export default {
     return {
       spanish: false,
 
+      imageText: "Priorities",
+      imageTextEsp: "Prioridades",
       econText: "My policies will prioritize supporting small businesses and partnering with business owners to provide residents of the ward employment and entrepreneurial opportunities.",
       econTextEsp: "Mis políticas darán prioridad al apoyo a las pequeñas empresas y al asociarse con propietarios de negocios para brindarles a los residentes del barrio empleo y oportunidades empresariales.",
       youthText: "Young people need a space to be safe and work on issues that affect their everyday life. Young people have created some of the greatest change that has happened in this country. With the support of the community, young people will lead the charge of being an asset to drive change in the ward.",

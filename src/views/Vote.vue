@@ -19,16 +19,13 @@
     </div>
     
 
-    <br><br><br><br><br>
-
-
   </div>
 </template>
 
 <style scoped>
 
 .blue-strip{
-    width: 100%; height: 180px;
+    width: 100%; height: 240px;
     border-style: solid;
     border-color: #044696;
     background-color: #044696;
