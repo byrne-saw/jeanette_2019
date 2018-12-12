@@ -54,7 +54,6 @@
       </div>
     </b-container>
    </div>
-<br><br><br><br><br><br>
 </div>
 
 
@@ -69,12 +68,12 @@
 
 
 .hero, .meet-image {
-  margin-right: -12px;
+  width: 100%;
 }
 
 
 .jumbotron {
-  background-color: rgba(4,70,150, .8);
+  background-color: rgba(4,70,150, .9);
   color: white;
   border-radius: 0 !important;
   display: flex;
