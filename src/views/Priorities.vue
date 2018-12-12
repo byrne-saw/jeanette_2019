@@ -2,7 +2,7 @@
   <div class="priorities">
     
     <div class="priority-image">
-      <b-img :src="require('../assets/priortest1.png')" fluid-grow/>
+      <b-img :src="require('../assets/priortest2.png')" fluid-grow/>
       <div class="text">Priorities</div>
     </div>
 
