@@ -88,12 +88,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #044696;
 }
 
 .carousel-header-container {
   width: 100vw;
   height: 8vh;
   background-color: #044696;
+  border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
