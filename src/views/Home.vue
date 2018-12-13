@@ -85,6 +85,10 @@
   width: 100%;
 }
 
+.meet-image {
+  cursor: pointer;
+}
+
 
 .jumbotron {
   background-color: rgba(4,70,150, .9);
