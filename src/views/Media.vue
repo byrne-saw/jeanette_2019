@@ -4,13 +4,16 @@
     <div class="carousel-header-container">
     <div class="carousel-header-text">On Melissa Harris-Perry</div>
     </div>
-   
+        <a href="https://www.msnbc.com/melissa-harris-perry/watch/hunger-strikers-protest-school-closing-520095299586" target="_blank">
+        <b-img :src="require('../assets/hunger-strike_1_orig-play.png')" fluid-grow />
+        </a>
 
-<div class="container">
+
+<!-- <div class="container">
   <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="http://player.theplatform.com/p/7wvmTC/MSNBCEmbeddedOffSite?guid=n_mhp_strike_150905"></iframe>
   </div>
-</div>
+</div> -->
 
 
 
